@@ -1,0 +1,403 @@
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 12px;
+}
+
+div.top-header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+header{
+    background-color: #EAC926;
+}
+
+header div.logo,
+header .form{
+    width: 50%;
+}
+
+header div.logo{
+    padding: 10px;
+}
+
+header .input{
+    padding: 10px;
+    width: 90%;
+    margin-right:10px;
+    border-radius: 3px;
+    border: solid 1px white;
+    background-color: #FFF;
+    color: #666;
+}
+
+header div.submit{
+    padding: 2px;
+    width: 30px;
+    height: 38px;
+    text-align: center;
+    border-radius: 3px 3px 3px 0px;
+    border-color: transparent;
+    margin-left: -14px;
+    border: solid 1px white;
+    background-color: #FFF;
+}
+
+header div.submit i{
+    margin-top: 10px;
+    width: 2em;
+    margin-left: -5px;
+}
+
+header .form{
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 11px;
+}
+header nav{
+    font-size: 12px;
+    /* border: solid white 2px; */
+}
+
+
+nav ul{
+
+    list-style-type: none;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+header ul li{
+      list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+    margin: 10px;
+}
+
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+div.products article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    transition: all .5s;
+}
+
+.description:hover{
+
+    opacity: 0.07;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    -ms-transition: opacity 500ms;
+    transition: opacity 500ms;
+  }
+
+main{
+    background-color: #e8e8e8;
+    padding: 6% 30% 60% 30%;
+    width: auto;
+    text-align: center;
+    height: 1024px;
+}
+
+.registerSection{
+    margin: auto;
+    width: 80%;
+    background-color: #b8b8b8;
+    padding: 6%;
+    display: block;
+    color: black;
+    text-align: left;
+}
+
+.Data{
+    margin-bottom: 10px;
+
+}
+
+.data{
+    width: 85%;
+    padding: 2px;
+    border-radius: 6px;
+    border: none;
+    margin-left: 20px;
+}
+
+.enviar, eliminar{
+    border-radius: 6px;
+    border: none;
+    font-size: 15px;
+    color: gray;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 8px;
+    width: 84px;
+} 
+
+.enviar:hover, .eliminar:hover{
+    color: white;
+    background-color: blue;
+    transition: all .2s;
+} 
+
+main label{
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-style: italic;
+    display: block;
+    
+}
+
+footer{
+
+    width: 100vw;
+    padding: 0%;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0%;
+   
+}
+
+footer article{
+    line-height: 31px;
+    margin: auto;
+    padding: 1%;
+    align-items: center;
+}
+
+footer article p {
+    line-height: 120%;
+    padding: 3%;
+
+}
+
+footer article i{
+        
+    display: flex;
+    font-size: 30px;
+    color: #0044AA;
+    padding: 3%;
+    width: 2em;
+    height: 2em;
+    margin-bottom: 10px;
+    
+}
+
+footer div.footerStatements article i:hover{
+    color: #0022AA;
+}
+
+/* Sin descripción */
+
+@media(max-width: 360px){
+    .description{
+        display: none;
+    }
+    
+    header nav{
+        display: none;
+    }
+
+}
+
+/* Navegación en tables */
+
+@media (min-width: 361px){
+
+    .burger-menu {
+        display: none;
+    }
+
+    header div.logo,
+    header .form, header div.top-header p{
+    width: 33%;
+}
+
+header div.top-header p{
+        margin-top: 50px;
+        margin-left: 5px;
+
+}
+
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+    margin-left: 10px;
+}
+
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    width: 8%;
+    padding: 2px;
+    height: 22px;
+    text-align: center;
+    border-radius: 3px;
+    margin-left: 5px;
+ 
+}
+
+header div.submit i{
+    margin-top: -5px;
+
+}
+    header nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 12px;
+        /* border: solid white 2px; */
+    }
+        
+    nav ul{
+    
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    div.nav1{
+        align-content: flex-start;
+        margin-left: 10px;
+        /* border: solid white 2px; */
+    }
+    
+    div.nav2{
+        align-content: flex-end;
+        margin-right: 10px;
+        /* border: solid white 2px; */
+    }
+
+    main section article .description{
+        display: block;
+}
+
+    /* main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+} */
+
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.products article{
+        width: 45%;
+    }
+
+    .price,
+    .discount{
+        width: 50%;
+    }
+}
+
+
+/* Navegación en Desktops */
+
+@media(min-width: 769px) {
+    .burger-menu {
+        display: none;
+    }
+
+    header nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 12px;
+        /* border: solid white 2px; */
+    }
+    
+    
+    nav ul{
+    
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    div.nav1{
+        align-content: flex-start;
+        margin-left: 10px;
+        /* border: solid white 2px; */
+    }
+    
+    div.nav2{
+        align-content: flex-end;
+        margin-right: 10px;
+        /* border: solid white 2px; */
+    }
+
+      /* main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+} */
+
+    
+    main section div.products article{
+        width: 22%;
+    }
+
+    .products{
+        display: inline-block;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+
+    footer .footerStatements {
+        width: 100%;
+        padding: 0%;
+        text-align: center;
+        box-sizing: border-box;
+        margin: 0%;
+        display: flex;
+    } 
+
+}
+
