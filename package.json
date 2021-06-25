@@ -1,16 +1,23 @@
 {
-  "name": "Estructura_de_un_sitio_web",
+  "name": "mercado-liebre",
   "version": "1.0.0",
-  "description": "",
-  "main": "add.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
   },
   "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beaxthus08/Mercado-Liebre.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "bugs": {
+    "url": "https://github.com/beaxthus08/Mercado-Liebre/issues"
+  },
+  "homepage": "https://github.com/beaxthus08/Mercado-Liebre#readme",
+  "description": ""
 }
