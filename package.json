@@ -8,12 +8,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^5.0.2",
     "express": "^4.17.1"
   },
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/beaxthus08/Mercado-Liebre.git"
+    "url": "git+https://github.com/beaxthus08/Mercado-Liebre.git",
+    "start": "node server.js"
   },
   "bugs": {
     "url": "https://github.com/beaxthus08/Mercado-Liebre/issues"
